@@ -111,6 +111,10 @@ li {
   width: 100%;
 }
 
+.section-light {
+  background-color: var(--background-light-color);
+}
+
 .small-header {
   font-weight: 700;
 
