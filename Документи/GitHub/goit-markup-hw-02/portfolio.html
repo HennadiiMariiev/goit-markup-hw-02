@@ -21,28 +21,25 @@
     <!-- Хэдер сайта-->
     <header>
       <nav>
-        <a href="./index.html" title="Логотип сайта" class="logo" lang="en"
-          ><span class="accent-text">Web</span>Studio</a
-        >
+        <a href="./index.html" title="Логотип сайта" class="logo" lang="en"><span class="accent-text">Web</span>Studio</a>
         <ul class="navbar">
-          <li class="inline-item">
-            <a href="./index.html">Студия</a>
+          <li class="">
+            <a href="./index.html" class="accent-text">Студия</a>
           </li>
-          <li class="inline-item">
-            <a href="./portfolio.html" class="accent-text">Портфолио</a>
+          <li class="">
+            <a href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="inline-item">
+          <li class="">
             <a href="">Контакты</a>
           </li>
         </ul>
       </nav>
       <ul class="navbar">
-        <li class="inline-item">
+        <li class="">
           <a href="mailto:info@devstudio.com" class="gray-text"
-            >info@devstudio.com</a
-          >
+            >info@devstudio.com</a>
         </li>
-        <li class="inline-item">
+        <li class="">
           <a href="tel:+380961111111" class="gray-text">+38 096 111 11 11</a>
         </li>
       </ul>
@@ -54,7 +51,7 @@
         <h1 class="hidden">Наши работы</h1>
         <ul class="section">
           <!--  в li вставлен radiobutton, как советовал Саша Репета -->
-          <li class="inline-item">
+          <li class="">
             <input
               id="all"
               class="radiobutton"
@@ -65,7 +62,7 @@
               onclick="showAllCards()"/>
             <label class="button" for="all">Все</label>
           </li>
-          <li class="inline-item">
+          <li class="">
             <input
               id="web"
               class="radiobutton"
@@ -75,7 +72,7 @@
               onclick="showHideCards(this)"/>
             <label class="button" for="web">Веб-сайты</label>
           </li>
-          <li class="inline-item">
+          <li class="">
             <input
               id="app"
               class="radiobutton"
@@ -85,7 +82,7 @@
               onclick="showHideCards(this)"/>
             <label class="button" for="app">Приложения</label>
           </li>
-          <li class="inline-item">
+          <li class="">
             <input
               id="design"
               class="radiobutton"
@@ -95,7 +92,7 @@
               onclick="showHideCards(this)"/>
             <label class="button" for="design">Дизайн</label>
           </li>
-          <li class="inline-item">
+          <li class="">
             <input
               id="marketing"
               class="radiobutton"
@@ -109,7 +106,7 @@
         <!--  скрытый заголовок h2-->
         <h2 class="hidden">Примеры работ</h2>
         <ul class="cards">
-          <li class="web-card block-item">
+          <li class="web-card">
             <a href="#">
               <img
                 src="./images/image-portfolio1.jpg"
@@ -120,7 +117,7 @@
               <p class="example-text">Веб-сайт</p>
             </a>
           </li>
-          <li class="design-card block-item">
+          <li class="design-card">
             <a href="#">
               <img
                 src="./images/image-portfolio2.jpg"
@@ -133,7 +130,7 @@
               <p class="example-text">Дизайн</p>
             </a>
           </li>
-          <li class="app-card block-item">
+          <li class="app-card">
             <a href="#">
               <img
                 src="./images/image-portfolio3.jpg"
@@ -146,7 +143,7 @@
               <p class="example-text">Приложение</p>
             </a>
           </li>
-          <li class="marketing-card block-item">
+          <li class="marketing-card">
             <a href="#">
               <img
                 src="./images/image-portfolio4.jpg"
@@ -159,7 +156,7 @@
               <p class="example-text">Маркетинг</p>
             </a>
           </li>
-          <li class="app-card block-item">
+          <li class="app-card">
             <a href="#">
               <img
                 src="./images/image-portfolio5.jpg"
@@ -172,7 +169,7 @@
               <p class="example-text">Приложение</p>
             </a>
           </li>
-          <li class="web-card block-item">
+          <li class="web-card">
             <a href="#">
               <img
                 src="./images/image-portfolio6.jpg"
@@ -185,7 +182,7 @@
               <p class="example-text">Веб-сайт</p>
             </a>
           </li>
-          <li class="design-card block-item">
+          <li class="design-card">
             <a href="#">
               <img
                 src="./images/image-portfolio7.jpg"
@@ -199,7 +196,7 @@
               <p class="example-text">Дизайн</p>
             </a>
           </li>
-          <li class="marketing-card block-item">
+          <li class="marketing-card">
             <a href="#">
               <img
                 src="./images/image-portfolio8.jpg"
@@ -210,7 +207,7 @@
               <p class="example-text">Маркетинг</p>
             </a>
           </li>
-          <li class="app-card block-item">
+          <li class="app-card">
             <a href="#">
               <img
                 src="./images/image-portfolio9.jpg"
@@ -230,17 +227,15 @@
       <a href="./index.html" title="Логотип сайта" class="logo" lang="en">
         <span class="accent-text">Web</span><span class="white-text">Studio</span></a>
       <address class="address">
-        <ul>
-          <li class="address-item">
             <p>г. Киев, пр-т Леси Украинки, 26</p>
-          </li>
-          <li class="address-item">
-            <a href="mailto:info@devstudio.com" class="opacity-text">info@devstudio.com</a>
-          </li>
-          <li class="address-item">
-            <a href="tel:+380961111111" class="opacity-text">+38 096 111 11 11</a>
-          </li>
-        </ul>
+            <ul>
+              <li>
+                <a href="mailto:info@devstudio.com" class="opacity-text">info@devstudio.com</a>
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="opacity-text">+38 096 111 11 11</a>
+              </li>
+            </ul>
       </address>
     </footer>
 
@@ -262,7 +257,7 @@
           } else {
             var cards = document.getElementsByClassName(strCard);
             for (let cardElement of cards)
-              cardElement.style.display = "inline-block";
+              cardElement.style.display = "inline";
           }
         }
       }
@@ -271,7 +266,7 @@
         for (let cardName of cardNamesArray) {
           var cards = document.getElementsByClassName(cardName);
           for (let cardElement of cards)
-            cardElement.style.display = "inline-block";
+            cardElement.style.display = "inline";
         }
       }
     </script>
