@@ -18,38 +18,52 @@ body {
   color: var(--main-color);
 }
 
-a {
-  text-decoration: none;
-  color: var(--main-color);
-}
-
-a:hover,
-a:focus {
-  color: var(--accent-color);
-}
 
 li {
   list-style-type: none;
 }
 
+/* стили для ссылок */
+a {
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.link:hover,
+.ink:focus {
+  color: var(--accent-color);
+}
+
+.cards .link {
+  color: var(--main-color);
+}
+
+.cards .link:hover,
+.cards .link:focus {
+  color: var(--main-color);
+}
+
 .logo {
+  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
+  color: var(--logo-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--logo-color);
 }
 
 .navbar {
   font-weight: 500;
   letter-spacing: .02em;
 }
-
-/* .inline-item {
-  display: inline;
-}
-
-.block-item {
-  display: inline-block;
-} */
 
 .accent-text {
   color: var(--accent-color);
@@ -68,8 +82,13 @@ li {
   line-height: 1.7;
 }
 
+/* стиль для скрытых элементов */
 .hidden {
-  display: none;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .hero {
@@ -92,28 +111,9 @@ li {
   text-align: center;
 }
 
-.hero-button {
-  font-weight: 700;
-  line-height: 1.9;
-  font-size: 16px;
-
-  margin: 5px 5px 10px;
-
-  background-color: var(--accent-color);
-  color: var(--active-color);
-
-  border: 1px solid var(--accent-color);
-  border-radius: 3px;
-}
-
 .section,
 .cards {
   width: 100%;
-}
-
-.cards a:hover,
-.cards a:focus {
-  color: var(--main-color);
 }
 
 .section-light {
@@ -160,33 +160,22 @@ li {
   line-height: 1.7;
 }
 
-/* Далее стили только portfolio.html */
+/* стили кнопок */
 
-.example-header {
-  font-size: 18px;
+.hero-button {
   font-weight: 700;
-
-  line-height: 2;
-  letter-spacing: .06em;
-}
-
-.example-text {
-  font-size: 16px;
-  font-weight: 400;
-
   line-height: 1.9;
-  letter-spacing: .03em;
+  font-size: 16px;
 
-  color: var(--inactive-color);
-}
+  margin: 5px 5px 10px;
 
-.radiobutton{
-  list-style-type: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+  background-color: var(--accent-color);
+  color: var(--active-color);
+
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+
+  cursor: pointer;
 }
 
 .button {
@@ -211,9 +200,23 @@ li {
   border: 1px solid var(--accent-color);
 }
 
-.radiobutton:checked + .button {
-  color: var(--active-color);  
-  background-color: var(--accent-color);
+/* Далее стили только portfolio.html */
 
-  border: 1px solid var(--accent-color);
+.example-header {
+  font-size: 18px;
+  font-weight: 700;
+
+  line-height: 2;
+  letter-spacing: .06em;
 }
+
+.example-text {
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.9;
+  letter-spacing: .03em;
+
+  color: var(--inactive-color);
+}
+

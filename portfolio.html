@@ -11,10 +11,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
       integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
       crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"/>
+      <link rel="stylesheet" href="./style.css" />
     <title>WebStudio - Портфолио</title>
   </head>
   <body>
@@ -24,23 +24,23 @@
         <a href="./index.html" title="Логотип сайта" class="logo" lang="en"><span class="accent-text">Web</span>Studio</a>
         <ul class="navbar">
           <li class="">
-            <a href="./index.html">Студия</a>
+            <a href="./index.html" class="link">Студия</a>
           </li>
           <li class="">
-            <a href="./portfolio.html" class="accent-text">Портфолио</a>
+            <a href="./portfolio.html" class="link accent-text">Портфолио</a>
           </li>
           <li class="">
-            <a href="">Контакты</a>
+            <a href="" class="link">Контакты</a>
           </li>
         </ul>
       </nav>
       <ul class="navbar">
         <li class="">
-          <a href="mailto:info@devstudio.com" class="gray-text"
+          <a href="mailto:info@devstudio.com" class="link gray-text"
             >info@devstudio.com</a>
         </li>
         <li class="">
-          <a href="tel:+380961111111" class="gray-text">+38 096 111 11 11</a>
+          <a href="tel:+380961111111" class="link gray-text">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
@@ -50,64 +50,17 @@
         <!--  скрытый заголовок h1-->
         <h1 class="hidden">Наши работы</h1>
         <ul class="section">
-          <!--  в li вставлен radiobutton, как советовал Саша Репета -->
-          <li class="">
-            <input
-              id="all"
-              class="radiobutton"
-              type="radio"
-              name="cards"
-              value="all"
-              checked
-              onclick="showAllCards()"/>
-            <label class="button" for="all">Все</label>
-          </li>
-          <li class="">
-            <input
-              id="web"
-              class="radiobutton"
-              type="radio"
-              name="cards"
-              value="web"
-              onclick="showHideCards(this)"/>
-            <label class="button" for="web">Веб-сайты</label>
-          </li>
-          <li class="">
-            <input
-              id="app"
-              class="radiobutton"
-              type="radio"
-              name="cards"
-              value="app"
-              onclick="showHideCards(this)"/>
-            <label class="button" for="app">Приложения</label>
-          </li>
-          <li class="">
-            <input
-              id="design"
-              class="radiobutton"
-              type="radio"
-              name="cards"
-              value="design"
-              onclick="showHideCards(this)"/>
-            <label class="button" for="design">Дизайн</label>
-          </li>
-          <li class="">
-            <input
-              id="marketing"
-              class="radiobutton"
-              type="radio"
-              name="cards"
-              value="marketing"
-              onclick="showHideCards(this)"/>
-            <label class="button" for="marketing">Маркетинг</label>
-          </li>
+          <li><button class="button">Все</button></li>
+          <li><button class="button">Веб-сайты</button></li>
+          <li><button class="button">Приложения</button></li>
+          <li><button class="button">Дизайн</button></li>
+          <li><button class="button">Маркетинг</button></li>
         </ul>
         <!--  скрытый заголовок h2-->
         <h2 class="hidden">Примеры работ</h2>
         <ul class="cards">
-          <li class="web-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio1.jpg"
                 width="370"
@@ -117,8 +70,8 @@
               <p class="example-text">Веб-сайт</p>
             </a>
           </li>
-          <li class="design-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio2.jpg"
                 width="370"
@@ -130,8 +83,8 @@
               <p class="example-text">Дизайн</p>
             </a>
           </li>
-          <li class="app-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio3.jpg"
                 width="370"
@@ -143,8 +96,8 @@
               <p class="example-text">Приложение</p>
             </a>
           </li>
-          <li class="marketing-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio4.jpg"
                 width="370"
@@ -156,8 +109,8 @@
               <p class="example-text">Маркетинг</p>
             </a>
           </li>
-          <li class="app-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio5.jpg"
                 width="370"
@@ -169,8 +122,8 @@
               <p class="example-text">Приложение</p>
             </a>
           </li>
-          <li class="web-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio6.jpg"
                 width="370"
@@ -182,8 +135,8 @@
               <p class="example-text">Веб-сайт</p>
             </a>
           </li>
-          <li class="design-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio7.jpg"
                 width="370"
@@ -196,8 +149,8 @@
               <p class="example-text">Дизайн</p>
             </a>
           </li>
-          <li class="marketing-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio8.jpg"
                 width="370"
@@ -207,8 +160,8 @@
               <p class="example-text">Маркетинг</p>
             </a>
           </li>
-          <li class="app-card">
-            <a href="#">
+          <li>
+            <a href="#" class="link">
               <img
                 src="./images/image-portfolio9.jpg"
                 width="370"
@@ -230,45 +183,13 @@
             <p>г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
               <li>
-                <a href="mailto:info@devstudio.com" class="opacity-text">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="link opacity-text">info@devstudio.com</a>
               </li>
               <li>
-                <a href="tel:+380961111111" class="opacity-text">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="link opacity-text">+38 096 111 11 11</a>
               </li>
             </ul>
       </address>
     </footer>
-
-    <script>
-      /* скрипт c функциями, конечно, нужно запихнуть в отдельный .js-файл
-    это совсем не по ТЗ, но руки чесались и время было)) */
-      const cardNamesArray = [
-        "web-card",
-        "app-card",
-        "design-card",
-        "marketing-card",
-      ];
-      function showHideCards(RadioChecked) {
-        var strCard = RadioChecked.value + "-card";
-        for (let cardName of cardNamesArray) {
-          if (strCard.toString() !== cardName) {
-            var cards = document.getElementsByClassName(cardName);
-            for (let cardElement of cards) cardElement.style.display = "none";
-          } else {
-            var cards = document.getElementsByClassName(strCard);
-            for (let cardElement of cards)
-              cardElement.style.display = "inline";
-          }
-        }
-      }
-
-      function showAllCards() {
-        for (let cardName of cardNamesArray) {
-          var cards = document.getElementsByClassName(cardName);
-          for (let cardElement of cards)
-            cardElement.style.display = "inline";
-        }
-      }
-    </script>
   </body>
 </html>
