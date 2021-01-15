@@ -34,7 +34,7 @@ a {
 }
 
 .link:hover,
-.ink:focus {
+.link:focus {
   color: var(--accent-color);
 }
 
