@@ -55,9 +55,18 @@ a {
   color: var(--logo-color);
 }
 
+.footer .logo {
+  color: var(--accent-color);
+}
+
 .logo:hover,
 .logo:focus {
   color: var(--logo-color);
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+  color: var(--accent-color);
 }
 
 .navbar {
@@ -83,7 +92,7 @@ a {
 }
 
 /* стиль для скрытых элементов */
-.hidden {
+.visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
